@@ -15,6 +15,24 @@
  - continuar(texto del boton continuar)
  - bool:inv = (si es false, entonces este usara los modelos de forma nativa de samp, en caso de que sea true, los tomara del enum de objetos del include, puedes agregar y quitar en una sola linea objetos)
  
-# OnXylosDialogResponse(playerid, dialogid, list, modelid) ((Esto se explica solo, igual que los dialogos))
+- OnXylosDialogResponse(playerid, dialogid, list, modelid) ((Esto se explica solo, igual que los dialogos))
 
-# formatXylosDialog(playerid, item1, item2, etc...)
+- formatXylosDialog(playerid, item1, item2, etc...)
+
+# bg_dialog_2.inc
+
+- ShowDialogLong(playerid, dialogid, const title[], const button1[], const button2[])
+- playerid = id del jugador
+- dialogid = id del dialogo a mostrar
+- title = titulo(texto)
+- button1 (texto)
+- button2(texto)
+
+
+
+- addModelToLong(playerid, dialogid, modelid, const des[])
+- des = nombre del modelid que quieres asignar
+
+
+
+- OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid);
