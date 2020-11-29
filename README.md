@@ -39,8 +39,8 @@
 
 
 # Tipo 1
-![Test Image 6]https://imgur.com/3bX9HDz)
+![Test Image 6](https://i.imgur.com/3bX9HDz.png)
 # Tipo 2
-![Test Image 6](https://imgur.com/JxaR1re)
+![Test Image 6](https://i.imgur.com/JxaR1re.png)
 # Tipo 3
-![Test Image 6](https://imgur.com/GXurILh)
+![Test Image 6](https://i.imgur.com/GXurILh.png)
