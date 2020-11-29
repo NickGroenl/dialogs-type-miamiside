@@ -36,3 +36,11 @@
 
 
 - OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid);
+
+
+# Tipo 1
+![Test Image 6]https://imgur.com/3bX9HDz)
+# Tipo 2
+![Test Image 6](https://imgur.com/JxaR1re)
+# Tipo 3
+![Test Image 6](https://imgur.com/GXurILh)
