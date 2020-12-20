@@ -7,41 +7,52 @@
 
 ``` ShowMSDialog(playerid, id, tipo, const caption[], const dentro[], const continuar[], bool:inv=false)
 
-  playerid = id del jugador,
-  id = id del dialogo (configurar maximo en #define MAX_XYLOS_DIALOG)
-  tipo = #define TYPE_MODEL 0
+  playerid =  id the player,
+  id = id dialog defined (config limit in the MAX_XYLOS_DIALOG)
+  type = #define TYPE_MODEL 0
         #define TYPE_MSG 1
-  caption (titutlo)
-  dentro (para tipo MSG, dejar en blanco si es para models)
-  continuar(texto del boton continuar)
-  bool:inv = (si es false, entonces este usara los modelos de forma nativa de samp, en caso de que sea true, los tomara del enum de objetos del include, puedes agregar y quitar en una sola linea objetos) 
+  caption (title)
+  dentro (type MSG dialogs, container box)
+  continuar(container next button)
+  bool:inv = (if false, using native models of the samp, is true using model
+  defined in the enum) 
   ```
  
-``` OnXylosDialogResponse(playerid, dialogid, list, modelid)
-   playerid = id of the player
+```
+public OnXylosDialogResponse(playerid, dialogid, list, modelid)
+   playerid = id the player
    dialogid = id dialog defined
    list = box id on click player the menu
    modelid = id of the model(object)
 ```
- formatXylosDialog(playerid, item1, item2, etc...)
+ ``` formatXylosDialog(playerid, item1, item2, etc...) ```
 
 # bg_dialog_2.inc
 
-- ShowDialogLong(playerid, dialogid, const title[], const button1[], const button2[])
-- playerid = id del jugador
-- dialogid = id del dialogo a mostrar
-- title = titulo(texto)
-- button1 (texto)
-- button2(texto)
+``` ShowDialogLong(playerid, dialogid, const title[], const button1[], const button2[])
+ playerid = id the player
+ dialogid = id dialog defined
+ title = title(text)
+ button1 (text)
+ button2(text)
+```
 
 
 
-- addModelToLong(playerid, dialogid, modelid, const des[])
-- des = nombre del modelid que quieres asignar
+``` addModelToLong(playerid, dialogid, modelid, const des[])
+  playerid = id the player
+  dialogid = id dialog defined
+  modelid = modelid(object) 
+  des = text to modelid description add
+```
 
 
 
-- OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid);
+```public OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid)
+  playerid = id of the player
+  dialogid = id dialog defined
+  response = if player get click button, false es right button
+```
 
 
 # Tipo 1
