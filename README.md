@@ -4,20 +4,26 @@
 
 # bg_dialog_1.inc
 
-- ShowMSDialog(playerid, id, tipo, const caption[], const dentro[], const continuar[], bool:inv=false)
 
- - playerid = id del jugador,
- - id = id del dialogo (configurar maximo en #define MAX_XYLOS_DIALOG)
- - tipo = #define TYPE_MODEL 0
+``` ShowMSDialog(playerid, id, tipo, const caption[], const dentro[], const continuar[], bool:inv=false)
+
+  playerid = id del jugador,
+  id = id del dialogo (configurar maximo en #define MAX_XYLOS_DIALOG)
+  tipo = #define TYPE_MODEL 0
         #define TYPE_MSG 1
- - caption (titutlo)
- - dentro (para tipo MSG, dejar en blanco si es para models)
- - continuar(texto del boton continuar)
- - bool:inv = (si es false, entonces este usara los modelos de forma nativa de samp, en caso de que sea true, los tomara del enum de objetos del include, puedes agregar y quitar en una sola linea objetos)
+  caption (titutlo)
+  dentro (para tipo MSG, dejar en blanco si es para models)
+  continuar(texto del boton continuar)
+  bool:inv = (si es false, entonces este usara los modelos de forma nativa de samp, en caso de que sea true, los tomara del enum de objetos del include, puedes agregar y quitar en una sola linea objetos) 
+  ```
  
-- OnXylosDialogResponse(playerid, dialogid, list, modelid) ((Esto se explica solo, igual que los dialogos))
-
-- formatXylosDialog(playerid, item1, item2, etc...)
+``` OnXylosDialogResponse(playerid, dialogid, list, modelid)
+   playerid = id of the player
+   dialogid = id dialog defined
+   list = box id on click player the menu
+   modelid = id of the model(object)
+```
+ formatXylosDialog(playerid, item1, item2, etc...)
 
 # bg_dialog_2.inc
 
