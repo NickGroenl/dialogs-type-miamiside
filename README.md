@@ -5,7 +5,8 @@
 # bg_dialog_1.inc
 
 
-``` ShowMSDialog(playerid, id, tipo, const caption[], const dentro[], const continuar[], bool:inv=false)
+``` 
+ShowMSDialog(playerid, id, tipo, const caption[], const dentro[], const continuar[], bool:inv=false)
 
   playerid =  id the player,
   id = id dialog defined (config limit in the MAX_XYLOS_DIALOG)
@@ -29,7 +30,8 @@ public OnXylosDialogResponse(playerid, dialogid, list, modelid)
 
 # bg_dialog_2.inc
 
-``` ShowDialogLong(playerid, dialogid, const title[], const button1[], const button2[])
+``` 
+ShowDialogLong(playerid, dialogid, const title[], const button1[], const button2[])
  playerid = id the player
  dialogid = id dialog defined
  title = title(text)
@@ -39,7 +41,9 @@ public OnXylosDialogResponse(playerid, dialogid, list, modelid)
 
 
 
-``` addModelToLong(playerid, dialogid, modelid, const des[])
+
+```
+addModelToLong(playerid, dialogid, modelid, const des[])
   playerid = id the player
   dialogid = id dialog defined
   modelid = modelid(object) 
@@ -48,7 +52,8 @@ public OnXylosDialogResponse(playerid, dialogid, list, modelid)
 
 
 
-```public OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid)
+```
+public OnLongDialogResponse(playerid, dialogid, bool:response, selitem, modelid)
   playerid = id of the player
   dialogid = id dialog defined
   response = if player get click button, false es right button
